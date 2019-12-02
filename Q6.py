@@ -14,3 +14,4 @@ key = 'test_key'
 
 s3 = boto3.resource('s3')
 object = s3.Object(bucket,key)
+object.put(Body=sheet)
